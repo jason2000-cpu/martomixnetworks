@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/228785972e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="scripts/main.js"></script>
+   <!--- <script data-main="scripts/main" src="scripts/require.js"></script>-->
+    
+    
+   
+    <title>MARTOMIX NETWORKS</title>
+
+
+
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        /*Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        
+        .modal-container {
+          padding: 16px;
+        }
+        
+        
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background:linear-gradient(-100deg, white 50%, red 50%);
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+
+ 
+      
+        </style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <!--menubar part-->
+    <div class="menubar" id="menubar">
+        <a class="menu1"  href="connection.html">Get Connected</a>
+        <a class="menu2"  href="packages.html">Explore Packages</a>
+        <a  class="menu3" href="add-ons.html">Add-ons</a>
+        <a class="menu4"  href="aboutUs.html">About Us</a>
+        <a class="menu5"  href="#footer">Contact</a>
+    </div>
+
+
+    <div class="myMenubar" id="myMenubar">
+        <a href="javascript: void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a   href="connection.html">Get Connected</a>
+        <a   href="packages.html">Explore Packages</a>
+        <a   href="/add-ons.html">Add-ons</a>
+        <a   href="aboutUs.html">About Us</a>
+        <a   href="#footer">Contact</a>
+
+    </div>
+    <span  id="nav" style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;</span>
+    <span id="bann" style="margin-left: 100px; font-family:jackson; font-size: 30px;"><span style="color:red">marto</span><span>mix</span></span>
+    <hr id="hr" style="color: black; height: 10px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--banner part-->
+
+    <div class="banner-part" id="banner-part">
+        <div class="left" id="left">
+            <div class="logo" id="logo">
+                <div style="font-family:Action Jackson; font-size:40px">MARTOMIX<sup style="font-size: 30px">)))</sup></div>
+                <br>
+                <div style="font-family:Colonna MT; font-size: 30px">NETWORKS</div>
+                <p style="font-family:Bahnschrift Condensed">"connecting the world"</p>
+            </div>
+               <h2  id="h2-txt" style="margin-top: 30px;"> connecting the world</h2>
+            <div class="nav-btns" id="nav-btns">
+                <button id="connect-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get connected</button>
+                <button  id="packages-btn" style="width:auto;" onclick='window.location.href="/packages.html"'>Explore Packages</button>
+            </div>    
+        </div>
+        <div class="right" id="right">     
+            <p>Net-fibre</p>
+            <div class="adv-box">
+                <p>Digitize your world</p>
+            </div>
+            <div class="adv-text">
+                FAST & RELIABLE <br> INTERNET FOR <br> YOUR HOME
+            </div>
+             
+
+         </div>
+        </div>
+    </div>
+
+    <!--modal form -->
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+
+      
+          <div class="modal-container" style="margin-top: 0">
+            <h2 style="font-family:elepant; font-size: 30px; text-align:center; letter-spacing:3px">Place Your Order</h2>
+
+            <div class="Fname" id="Fname">
+                <input type="text"  name=" First_name"  placeholder="First Name" required>
+             </div>
+             <div class="Sname" id="Sname">
+                <input type="text" name="Second_name"  placeholder="Second Name" required>
+             </div>
+             <div class="email" id="email">
+                <input type="email" name="email"  placeholder="email" required>
+             </div>
+             <div class="phone-no" id="phoneNo">
+                 <input type="tel" name="phoneNo"  required>
+             </div>
+            <div class="package" id="packageId">
+                          <select name="package"  required>
+                              <option value="" disabled selected hidden >choose package</option>
+                              <option value="Basic">Basic package</option>
+                              <option value="pro">Pro package</option>
+                              <option value="Bronze">Bronze package</option>
+                              <option value="Premiuim">Premiuim package</option>
+                          </select>
+                      </div>
+                       <div class="location" id="location">
+                          <select name="location"  required>
+                              <option value="" disabled selected hidden >Select your loaction</option>
+                              <option value="Roysambu">Roysambu</option>                       
+                              <option value="Kasarani">Kasarani</option>
+                              <option value="Thika">Thika</option>
+                              <option value="Juja">Juja</option>
+                              <option value="Makongeni">Makongeni</option>
+                              <option value="Kenyatta Rd">Kenyatta Rd</option>
+                              <option value="Kabati">Makongeni</option>
+                              <option value="Gatanga">Gatanga</option>
+                              <option value="Mang'u">Mang'u</option>
+                          </select>
+                       </div>
+              
+            <button type="submit"  id="submit" onclick="sendMessage()">SUBMIT</button>
+      
+          </div>
+      
+      
+        </form>
+      </div>
+
+
+
+
+
+
+
+    <!--packages part-->
+    <div class="packages">
+        <h2 style="text-align: center; font-family: elephant;">Fibre Packages</h2>
+        <div class="package-prices">
+            <div class="basic-pkg">
+                <h3>fibre Basic</h3>
+                <p>3mbps  1500/-</p>
+            </div>
+            <div class="pro-pkg">
+                <h3>Fibre Pro</h3>
+                <p>5Mbps 2500/-</p>
+            </div>
+            <div class="bronze-pkg">
+                <h3>Fibre Bronze</h3>
+                <p>8Mbps 3000/-</p>
+            </div>
+            <div class="premium-pkg">
+                <h3>Fibre Premium</h3>
+                <p>10Mbps 3500/-</p>
+            </div>
+        </div>
+ 
+    </div>
+
+
+
+    <!--rewviews  carousel part-->
+
+    <div class="container" id="container" style="height: 70vh ">
+        <h2>Testimonials</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box" id="single-box"  >
+                                        <div class="image-area" id="image-area"><img  style="width:90px; height:90px"  src="pics/now/pexels-anthony-shkraba-8191955.jpg" alt="J"></div>
+                                        <div class="img-text" id="img-text">
+                                            <h2>Perterson Mutwiri  ONE</h2>
+                                            <p>jackson mwangiackson mwangiackson mwangiackson
+                                                 mwangiackson mwangiackson mwangiackson mwangiackson mwangiackson
+                                                  mwangiackson mwangiackson mwangi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="single-box" id="single-box">
+                                        <div class="image-area" id="image-area"><img   style="width:90px; height:90px"  src="pics/now/pexels-anthony-shkraba-8191955.jpg" alt="J"></div>
+                                        <div class="img-text" id="img-text">
+                                            <h2>Perterson Mutwiri  TWO</h2>
+                                            <p>jackson mwangiackson mwangiackson mwangiackson
+                                                 mwangiackson mwangiackson mwangiackson mwangiackson mwangiackson
+                                                  mwangiackson mwangiackson mwangi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="single-box" id="single-box">
+                                        <div class="image-area"  id="image-area"><img style="width:90px; height:90px"  src="pics/now/pexels-anthony-shkraba-8191955.jpg" alt="J"></div>
+                                        <div class="img-text" id="img-text">
+                                            <h2>Perterson Mutwiri  THREE</h2>
+                                            <p>jackson mwangiackson mwangiackson mwangiackson
+                                                 mwangiackson mwangiackson mwangiackson mwangiackson mwangiackson
+                                                  mwangiackson mwangiackson mwangi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box" id="single-box">
+                                        <div class="image-area" id="image-area"><img style="width:90px; height:90px"  src="pics/now/pexels-anthony-shkraba-8191955.jpg" alt="J"></div>
+                                        <div class="img-text"  id="img-text">
+                                            <h2>Perterson Mutwiri  FOUR</h2>
+                                            <p>jackson mwangiackson mwangiackson mwangiackson
+                                                 mwangiackson mwangiackson mwangiackson mwangiackson mwangiackson
+                                                  mwangiackson mwangiackson mwangi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="single-box" id="single-box">
+                                        <div class="image-area" id="image-area"><img  style="width:90px; height:90px"  src="pics/now/pexels-anthony-shkraba-8191955.jpg" alt="J"></div>
+                                        <div class="img-text" id="img-text">
+                                            <h2>Perterson Mutwiri  FIVE</h2>
+                                            <p>jackson mwangiackson mwangiackson mwangiackson
+                                                 mwangiackson mwangiackson mwangiackson mwangiackson mwangiackson
+                                                  mwangiackson mwangiackson mwangi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="single-box" id="single-box">
+                                        <div class="image-area" id="image-area"><img  style="width:90px; height:90px" src="pics/now/pexels-anthony-shkraba-8191955.jpg" alt="J"></div>
+                                        <div class="img-text" id="img-text">
+                                            <h2>Perterson Mutwiri  SIX</h2>
+                                            <p>jackson mwangiackson mwangiackson mwangiackson
+                                                 mwangiackson mwangiackson mwangiackson mwangiackson mwangiackson
+                                                  mwangiackson mwangiackson mwangi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>
+     </div>
+    
+
+    
+
+
+ <!--footer part-->
+ <hr>
+ <div class="footer" id="footer">
+     
+     <div class="contacts">
+         <h3>Contacts</h3>
+          <i class="fa fa-whatsapp" aria-hidden="true"> +254725714678</i>
+          <br>
+
+          <i  style="color: blue " class="fab fa-facebook-square" aria-hidden="true"></i>Martomix comm
+          
+          <br>
+          <i style="color:green" class="fa fa-twitter" aria-hidden="true"></i>@martomix_comm
+          <br>
+          <i class="fab fa-instagram-square"></i>martomix_comm
+          <br>
+          <i class="fas fa-envelope"></i>martomixcomm@info.com
+          <br>
+
+        
+     </div>
+     <div class="resources">
+         <h3>Resources</h3>
+         <a href="terms&conditions">Terms & Conditions</a>
+         <br>
+         <a href="terms&conditions">Terms & Conditions</a>
+         <br>
+         <a href="terms&conditions">Terms & Conditions</a>
+
+     </div>
+     <div class="footer-packages">
+         <h3>Useful Links</h3>
+        <a href="FAQs">FAQs</a>
+        <br>
+        <a href="aboutUs.html">About-Us</a>
+        <br>
+        <a href="Ad-Ons">Ad-Ons</a>
+
+
+
+
+     </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="dist/bundle.js"></script>
+   <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

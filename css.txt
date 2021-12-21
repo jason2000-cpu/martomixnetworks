@@ -1,0 +1,13 @@
+ /* twilio SID*/
+
+ SK63d39985c4d1e76e692297d55228b545
+
+ /* twilio secret code*/
+
+ QF75nNw6Wte3l14Ns0GhbV9IEdu5ApvL
+
+
+
+ /*messaging service SID */
+
+ MGd27c0cff5e3b44d90248f39f367c6992

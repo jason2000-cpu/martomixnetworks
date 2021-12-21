@@ -1,0 +1,468 @@
+@font-face {
+    font-family: Facon;
+    src: url("fonts/Facon.ttf");
+} 
+@font-face {
+    font-family: jackson;
+    src: url("fonts/actionj.ttf");
+}
+body{
+    margin: 0;
+}
+
+.menubar{
+    border: 2px solid black;
+    display: flex; 
+
+    
+}
+.menu1, .menu2, .menu3, .menu4, .menu5{
+    background-color: black;
+    color: white;
+    position:relative;
+    border: 2px solid blue;
+    display: inline;
+    text-decoration: none;
+    --padding:5px 30px;
+    text-align: center;
+    font-size: 20px;
+    flex: 1 1 auto
+}
+
+
+
+.myMenubar{
+    
+    height: 100%;
+    width: 0;
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.myMenubar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.myMenubar a:hover{
+    color: #f1f1f1;
+}
+.myMenubar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media  screen and (max-height:450px) {
+    .myMenubar{padding-top: 15px; }
+    .myMenubar a{font-size: 18px;}
+
+}
+
+@media screen and (min-width:450px){
+    #nav{display:none}
+    #bann{display:none}
+    #hr{display:none}
+    #h2-txt{display:none}
+    
+    
+}
+
+@media screen  and (max-width:450px){
+    #menubar{display:none}
+    #right{display: none}
+    #left{padding:0px; height: 45vh;}
+    #logo{display: none;}
+    #nav-btns{margin-top:100px; margin-left:20px}
+    #footer{margin:20px 20px;}
+    #banner-part{height: 40vh; margin-top:0px}   
+    
+}
+@media screen and ( max-width:500px){
+    #container {height: 30vh}
+    #single-box{height:100vh; margin:30px}
+    #img-text{ padding:50% 5%}
+    #nav-btns{ margin-left: 0px}
+
+}
+
+.banner-part{
+    display: flex;
+    flex-direction: row;  
+    height: 85vh;
+
+}
+.right, .left{
+   
+    display: inline-block;
+    flex:1 1 auto;
+    text-align: center;
+    padding: 90px 0px;   
+
+}
+.left{
+    padding-top: 10px;
+    border: 2px solid #000;
+    background:linear-gradient(-120deg, white 50%, red 50%);
+
+}
+.right{
+    background-image: url("pics/now/pexels-andrea-piacquadio-840996.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Facon;
+    font-size: 30px;
+}
+.logo{
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 90px ;
+}
+.nav-btns #connect-btn, .nav-btns #packages-btn {
+    border: 1px solid black;
+    margin-right: 40px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 20px;
+    color:blue;
+}
+
+
+
+/*packges CSS*/
+.packages{
+    padding-top:50px;
+}
+.package-prices{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.basic-pkg, .pro-pkg, .bronze-pkg, .premium-pkg{
+
+    text-align: center;
+    display: inline-block;
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 0px 0px 50% 50%;
+    flex:1 1 auto;
+    margin:20px ;
+    padding-top:30px;
+    height:25vh;
+    border:2px dashed black
+}
+
+
+
+
+
+/*Reviews CSS*/
+.container{
+    background: linear-gradient(-100deg, white 50%, red 50%);
+    height: 70vh;
+    width:100%;
+    font-family: Poppins;
+    margin-top: 5% ;
+    padding-top: 50px;
+    overflow: hidden;
+   
+
+}
+
+.img-text{
+    width: 100%;
+    height:200px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background:#262626;
+    color: #fff;
+    border-radius: 15px;
+}  
+
+.img-text h2{
+    font-size:20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.img-text p{
+    font-size: 14px;
+}
+.single-box{
+    position: relative;
+    margin-bottom:30px;
+}
+
+.image-area{
+    position:absolute;
+    width:100px;
+    height: 100px;
+    border: 5px solid  #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+}
+
+.img-area img{
+    width: 100%;
+    
+}
+
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -70px;
+   
+}
+.carousel-indicators button{
+    background:#000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+}
+
+.carousel-indicators .active{
+    background: #fff
+}
+
+
+/*Footer CSS*/
+.footer{ 
+    display: flex;
+    justify-content: space-around;
+}
+.contacts, .resources, .footer-packages{
+    
+    display: inline-block;
+    
+   
+}
+
+
+
+/*CONNECTION.HTML FILE */
+
+@media screen  and (max-width:500px){
+    #form-body{
+        background:linear-gradient(-110deg, white 50%, red 50%);
+    }
+    #Fname{margin: 10px;padding: 20px 0px;display: block}
+    #Sname{ margin: 10px;padding: 20px 0px;display: block}
+    #email{margin: 10px;padding: 20px 0px;display: block}
+    #location{margin: 10px;padding: 20px 0px;display: block}
+    #packageId{margin: 10px;padding: 20px 0px;display: block}
+    #phoneNo{margin: 10px;padding: 20px 0px;display: block}
+    #submit{ margin: 20px 100px;}
+}
+@media screen and (max-width:500px){
+    #Fname, #email, #packageId{margin:20px}  
+  
+}
+
+
+
+
+.banner-part2{
+    text-align:center;
+    color: red;
+    font-family: Facon;
+    font-size: 30px;
+    padding-top: 50px;
+    background-image: url("pics/pexels-brett-sayles-4339335.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+.form-body{
+     border:2px solid black;
+      margin: 0 20px;  
+      padding:20px 50px; 
+      box-shadow: 5px 5px 5px; 
+      background:linear-gradient(200deg, white 50%, red 50%);
+}
+.form-container {
+    display: flex; 
+      
+}
+
+input, select{
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    width: 250px;
+   
+}
+
+.Fname, .Sname, .email, .location, .package, .phone-no{
+    font-size: 30px;
+    margin: 10px 90px;
+    padding: 20px 0px;
+    display: inline-block;
+  
+}
+
+form button{
+    margin: 20px 450px;
+    width:100px;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    border:2px solid black;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 2px;
+
+}
+
+/*Packages.html file CSS*/
+
+
+@media screen and (max-width: 500px) {
+    #basic, #pro, #bronze, #premium{
+        margin: 50px 20px;
+    }
+
+    
+}
+.basic, .pro, .bronze, .premium{
+    border:2px solid black;
+    border-radius: 10px;
+    margin: 50px 200px;
+    box-shadow: 5px 5px 5px  red;
+}
+
+.basic-cont, .pro-cont, .bronze-cont, .premium-cont{
+    display:flex;
+   
+}
+.basic-title h2, .pro-title h2, .bronze-title h2, .premium-title h2{
+    text-align: center;
+    font-size: 40px;
+
+
+}
+.basic-txt, .pkg-basic, .pro-txt, .pkg-pro, .bronze-txt, .pkg-bronze, .premium-txt, .pkg-premium{
+    display: inline-block;
+
+    flex:1 1 auto;
+   
+   
+}
+.basic-txt, .pro-txt, .bronze-txt, .premium-txt{
+    font-size: 20px;
+    line-height: 20px;
+   
+    margin-right: 12px
+   
+
+}
+
+/*about-Us file CSS*/
+.main-content{
+    font-size: 20px;
+    margin: 0px 15px
+}
+
+
+
+/*add-ons*/
+
+
+
+@media screen and (max-width: 500px) {
+    #cctv, #fence, #alarm, #tel{margin:10px}
+    #img, #img2{width: 250px; height:250px; margin-right: 0px; }
+
+    #cctv-txt, #fence-txt, #tel-txt, #alarm-txt{margin-top: 10px}
+    #img-txt{font-size: 18px;}
+}
+@media screen and (min-width: 500px){
+    #img{width: 400px; height:250px; margin-right: 10px; }
+    #img2{width: 400px; height:250px; margin-right: 2px; }
+    
+}
+@media screen and(max-width: 915px) {
+    #img, #img2{width:900px}
+    
+}
+
+.banner-1{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Arial Black';
+    letter-spacing:2px;
+}
+
+.cctv, .fence, .tel, .alarm{
+   
+    position:relative;
+    border: 2px solid black;
+    margin: 30px 100px;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+.cctv, .tel{
+    background:linear-gradient(-110deg, white 50%,  red 50%);
+}
+.fence, .alarm{
+    background: linear-gradient(110deg, white 50%, red 50%)
+}
+
+.cctv-pic img,  .fence-pic img, .tel-pic img, .alarm-pic img {
+    width: 900px;
+    height: 200px;
+    margin-right: 100px;
+    
+}
+.cctv-pic p, .fence-pic p, .tel-pic p{
+    font-family:elephant;
+    position: absolute;
+    font-size: 30px; 
+    color: rgba(0, 0, 0, 1);
+    font-weight: 100;
+    transition: 1s
+}
+.cctv-pic p{
+    top: 30%;
+    left: 47%;
+}
+.fence-pic p, .alarm-pic p{
+    top: 30%;
+    left: 5%;
+}
+.tel-pic p{
+    top: 30%;
+    left: 42%;  
+}
+.alarm-pic p{
+    font-family:elephant;
+    position: absolute;
+    font-size: 30px; 
+    color:white;
+    transition: 1s
+}
+.cctv-pic p:hover, .fence-pic p:hover, .tel-pic p:hover , .alarm-pic p:hover{
+    font-size:31px;
+    letter-spacing: 2px;
+}
+.cctv-txt, .fence-txt, .tel-txt, .alarm-txt{
+    margin:40px 20px 2px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
